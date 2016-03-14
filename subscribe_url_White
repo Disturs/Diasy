@@ -1,0 +1,17 @@
+! defined xiaomi AD filter rules here
+! some except rule here, begin with @@
+@@||huaweidevice.com^$third-party
+@@||pingan.com.cn^$third-party        
+@@||4008823823.com.cn^$third-party
+@@||goodjobs.cn^$third-party    
+@@||lenovo.com.cn^$third-party
+@@||damai.cn^$third-party
+@@||wbiao.cn^$third-party
+@@||liwai.com^$third-party
+@@||wangfujing.com^$third-party
+@@||ct10000.com^$third-party
+@@||189.cn^$third-party
+@@||web.7k7k.com^$third-party
+@@||u17.com^$third-party
+@@||uucall.com^$third-party
+@@||vjia.com^$third-party
