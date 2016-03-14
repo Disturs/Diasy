@@ -1,2 +1,12 @@
 ！Adblock custom rules
-mp4ba.com##.clear.text_center
+! mp4ba
+mp4ba.com##ad_list_middle
+mp4ba.com##.box[style="overflow:hidden;"]
+mp4ba.com##.clear.intro_inner
+mp4ba.com##.announcement.clear
+img.fd7c.com##.HTML
+mp4ba.com##.commentarea
+mp4ba.com##.footer
+mp4ba.com##.box.clear.flink
+mp4ba.com##.ad_list_middle
+mp4ba.com##.text_center
