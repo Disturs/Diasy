@@ -1,0 +1,299 @@
+[ADM]
+!-----| ADM特别规则[ emCupid ] LastUpdate:2017-09-15 06:14:47
+!-----| 此规则由本人自用规则（ADM）而来，开放给有兴趣同学，其他程序可能会不兼容
+!-----| 不介意其他程序可以稍改语法拿去使用，共同学习，请注明来源
+!-----| 含全局规则可能会对处理速度有微小的影响，如果特别在意请勿使用
+!-----| 如有问题请到QQ反馈群：377971349 讨论区：http://forum.admflt.com/d/3 反馈
+!-----| 防程序更新BUG干扰行：<head></head><body></body>
+@@||admup.admflt.com/d/*.txt$pass
+
+!------[TMP临时区begin]------!
+
+!======[白名单]---↓
+S:api.geetest.com
+@@||cupid.iqiyi.com/show2?a=qc$pass
+@@||dianping.com
+@@||g1.dfcfw.com/g2/201702/20170216133526.png
+@@||player.pptv.com/flashplayer/pid/*/baiduduanshipin.swf$pass
+@@||static.yxdown.com/pc/index/js/jquery.lazyload.js
+!======[白名单]---↑
+
+!======[拦截类]---↓
+||AdModel/$script
+||AdSystem/$script
+||dfpcitv
+||.com/vs.php?id=
+||/caches/poster_js/$script
+||3987.com$third-party
+||71.am/*AdManager
+||admaster.com.cn
+||ads-union.jd.com
+||api.message.le.com/v1/messages?
+||app.video.baidu.com/xda
+||bdstatic.com/*/admLoader/$script
+||chucity.com
+||data.vod.itc.cn/*prod=ad*
+||dingding*.com$third-party
+||dydab.com$third-party
+||ge95.com:8008/?aspx=
+||googletagservices.com
+||guangzizai.com$script
+||huaduu.com$third-party
+||jjygym.com$third-party
+||jph.itiexue.net
+||letvimg.com/*gugwl/*.swf$object
+||mgtv.com/mediafiles/wiad
+||mini.eastday.com/*detail*$script
+||ssajax.cn/*info/*global$script
+||static.luna.58.com/js/mad.js
+||stats.chinaz.com/zz_img/
+||vamaker.com$third-party
+||www.gucheng.com/*/common.js
+||www.ixiumei.com/otherhtml/$script
+||www.xdowns.com/template/tshouyou/js/jietu.js
+||www.zzlxs.net/ap
+||www1.elecfans.com
+||ykatr.youku.com
+||yxbao.yxbao.com/js/$script
+||yyrtv.com/*=Advs
+|http://*.19869.com$third-party
+|http://*.aili.com$third-party
+|http://*.cpm*.com
+|http://*.hao61.net/$script
+|http://*.hexun.com/zt/articleAd/$script
+|http://*.il8r.com/$third-party
+|http://*.supfree.net/otop.js
+|http://*.supfree.net/www$script
+|http://*.xiacaidd.com$third-party
+|http://*/PC_ad$script
+|http://*/ssp.js$script
+|http://*/ssp/$script
+|http://*/tui/*ad$script
+|http://*980x60.js$script
+|http://*980x70$image
+|http://*index960.js$script
+|http://static.nanrenwo.net/*/poster.js$script
+|http://static.wmxa.cn/asdnew/
+|http://static.yxdown.com/cj/$script
+|http://tanx.sjzcmw.com$script
+|http://u-x.jd.com/static/$script
+|http://www.1kkk.com/wxh
+|http://www.mingxing.com/*/js/_$script
+|http://www.yuledaily.com/hbimg/wapc.js
+!======[拦截类]---↑
+
+!======[插入类]---↓
+|http://*,|https://*##.ad-left,.ad-right,#ad-left,#ad-right,.ad_left,.ad_right,#ad_left,#ad_right,.adv_left,.adv_right,#adv_left,#adv_right,.adv-left,.adv-right,#adv-left,#adv-right
+51cto.com##%.top_bg{height:85px!important}
+51cto.com##.top_bg>.wrap,#edu_adver,.left-ad,.right-ad
+bbs.tiexue.net##%.foucs.border{margin-top:50px}
+btime.com##[adview-id]
+chinaz.com###bottomImg
+cri.cn##.ad-item
+eastmoney.com##.lyad
+gaoqing.la###head,center img[src*="sinaimg.cn"],.subsidiary+a
+gaoqing.la##%body{background-image:url()!important}
+guokr.com##[class*="-advert"]
+hexun.com###newsPopWin
+i.qq.com##.icon_adv_logo,[id^="adImg"]
+item.btime.com#@##subLayout
+m.toutiao.com##.icon-container
+mgtv.com/b/###a_box
+nipic.com##[class*="advertCloseBtn"]
+qiushibaike.com##.shopwindow
+sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner
+tiexue.net##[onclick*="click_out_ad"],a[href*="txads_from"],.goushi,[id^="Baidu_WW"],[id^="Baidu_PIC"]
+user.qzone.qq.com##li.f-single-biz
+v.youku.com##.h5-ext-layer-adsdk
+www.17ce.com##[class^="add_"]
+www.17sucai.com##div[class^="tb"][class*="x"]$B
+www.aihami.com##%.conText>.recommend{margin-top:4em}
+www.aihami.com##.conText>div[style*="overflow"][style*="hidden"],.adDingT,.ad640x90,ad300x90,.h250
+www.chapaofan.com##[class^="pf-ad"],.details-ad
+www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wrap
+www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide
+www.elecfans.com##.gg,.advertising,#AdArticleDetailTitle,iframe[src*="advertisement"],iframe[src*="www1.elecfans.com"],.ad-pcb
+www.fawan.com##[id^="ynetG"]
+www.haha.mx##.fl.sidebar>div[class][style],.waterfall-column iframe
+www.hxnews.com##.bd ul li a[rel="nofollow"],[class*="banner-"]
+www.iqiyi.com/*.html##.rightPCAdv$B
+www.ithome.com###con>div:not([id]):not([class])
+www.lbldy.com##%#center{min-height:0!important}
+www.lbldy.com##.ad-pc,.listad
+www.takefoto.cn##.news-ad,.advert
+www.tiexue.net/ShowPicClass##%.picleft{display:block!important}
+www.ttmeiju.com##img[alt$=".jpg"]
+www.utubon.com##div[class*="text"][id^="text"]
+www.v2ex.com##.inner[align="center"],.inner[align="center"]+.sidebar_compliance,.sidebar_units
+www.v2ex.com/t/##.inner>a:not([class]):not([id]):not([href^="/"]),.inner>span[class],.inner>strong.green
+www.webqianduan.cn##.adW
+www.yxdown.com/*.html##div[id*="adv"],iframe
+wzshipin.com##%#header{background:none!important}
+wzshipin.com##[class^="tlad"],.boxg
+youtube.com###masthead-ad,#player-ads
+zol.com.cn##%body{background-image:none!important}
+zol.com.cn##[class*="ad-box"],iframe[src*="/ad/"]
+!======[插入类]---↑
+
+!======[替换类]---↓
+|http://www.zimuku.net/$s@</head>@<script>isAdEnabled=true</script></head>@
+||gaoqing.la$s@</head>@<script>document.write=null;</script></head>@
+||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
+||data.video.qiyi.com/videos/other/$S@^.*$@@s
+||cupid.iqiyi.com/show2$S@^.*$@@s
+www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
+tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerror="javascript:this.parentNode.parentNode.style.display='none';">@
+||www.igeek.com.cn/static/css/articlen/style.css$S@(\.ad_box[^{]*{)[^}]*@${1}display:none@
+||www.zhicheng.com/statics/v2/js/global.js$S@$@function tyLoader(){return!0}@s
+!======[替换类]---↑
+
+!======[cpro.baidu.com]---↓
+|http://bdjs.*
+|http://bdjs1.*
+|http://bdjs2.*
+|http://bdad.$script
+|http://pb1.*$script
+|http://pb2.*$script
+|http://bd1.*$script
+|http://bd2.*$script
+|http://*/2e4d96dca598a574*.js
+!Baidu-src-js
+||hlfjifjlzizreblfjzb.js
+/cpro/*/noexpire/*.min.js$f@302:s@@@
+||/cpro/*/noexpire/*.min.js$S@^.*$@location.href='about:blank';@s
+|http://*?*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*$S@<!--sid=\w*-->@<style>#wrapper,[id^="mainDiv_"],#container{display:none!important}</style>@
+|https://*?*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*$S@<!--sid=\w*-->@<style>#wrapper,[id^="mainDiv_"],#container{display:none!important}</style>@
+cpro.baidustatic.com/cpro/*/noexpire/*.min.css$f@302:s@@@
+||/cpro/*/noexpire/*.min.css$S@^.*$@*{display:none!important}@s
+!======[cpro.baidu.com]---↑
+
+!======[v.qq.com]---↓
+|http://*/variety.tc.qq.com/
+|https://*/variety.tc.qq.com/
+||vd*.qq.com/proxyhttp$s@"ad"*}}",@@
+|https://livew*.qq.com/livemsg?$S@<!\[CDATA\[.*?\]\]>@@
+|https://livew*.qq.com/livemsg?$S@http[^"]*@@
+!======[v.qq.com]---↑
+
+!------[TMP临时区  end]------!
+
+!------[前端 CDN 加速服务begin]
+!------↓谷歌字体fonts.googleapis.com/css?family=Ravi+Prakash
+!fonts.googleapis.com$f@302:s@fonts.googleapis.com@fonts.lug.ustc.edu.cn@
+!------↓jQuery静态库code.jquery.com/jquery-3.1.1.js
+code.jquery.com$f@302:s@//code.jquery.com/(jquery)-([\d\.]*)((\.min)*\.js)@//cdn.staticfile.org/$1/$2/$1$3@
+!------↓jQueryUI库code.jquery.com/ui/1.12.1/jquery-ui.min.js
+code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/@
+!------[前端 CDN 加速服务end]
+
+!------[全局处理浮动窗]
+!------↓其中youku.com、weibo.com是域名白名单（根域名），域名之间用|隔开，结尾不用|；v3.2.2.0312增强了隐藏规则，隐藏屏蔽增强测试：http://www.3gsc.com.cn/
+!-白名单放行begin
+||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
+@@||bdstatic.com/static/searchresult/pkg/*.css$pass
+@@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
+@@||115.com/*$pass
+@@||static.geetest.com/static/*.css$pass
+@@||alicdn.com/static-*/login/*/login/css/main*.css$pass
+@@||58cdn.com.cn/*.css$pass
+@@||console.cloud.tencent.com/*$pass
+@@||res*.ynet.com/*header.css$pass
+@@||cdn.120askimages.com/ask/css/topfloat.css$pass
+@@||s.itiexue.net/??css$pass
+@@||www.css-js.com/*.css
+@@||www.mop.com/css/login.css$pass
+@@||image.xinmin.cn/*common.css$pass
+!-白名单放行end
+
+|http://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<\/title>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=http://ins.admflt.com/fcss.min.js></script>${2}@i
+|https://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<\/title>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=https://ins-ssl.admflt.com/fcss.min.js></script>${2}@i
+|http://$S@(z-index(:| )*\d{9,10})@max-width:0!important;visibility:hidden!important;hackcss:@
+||*/*.css|$S@z-index(:| )*(9){4,5}\d@max-width:0!important;max-height:0;overflow:hidden;visibility:hidden!important;hackcss:@
+!------[全局处理浮动窗+隐藏类规则屏蔽增强end]
+
+!------[其他规则begin]
+!!------↓全局性测试规则
+|http://,|https://##a[href*="@"][href$="exe"],div[id^="_"][style="width: 100%;"]>iframe,iframe[src*="pos.baidu.com"],a[href*="cpro.baidu.com"],a[href*="i/?cid="]
+|http://*@*.exe
+
+!------↓屏蔽联盟脚本插入（测试）2017-8-24
+|http://*/*.php*id=$f@302:s@^http:\/\/((?!admflt|weibo|hdchina|pixiv|easyicon|sporttery|abcydia|saerome|apps.game.qq).)*\.(\w)+(\:\d*)*\/((?!forum|home|avatar|attachment|thread|read|followbutton|down|edit|player|video|detail|captcha|sina|v_play|getusertorrent).)*.php\?[a-zA-Z]*id=\d+@http://admup.admflt.com/null.html?block@
+|https://*/*.php*id=$f@302:s@^https:\/\/((?!admflt|weibo|hdchina|pixiv|easyicon|sporttery|abcydia|saerome|apps.game.qq).)*\.(\w)+(\:\d*)*\/((?!forum|home|avatar|attachment|thread|read|followbutton|down|edit|player|video|detail|captcha|sina|v_play|getusertorrent).)*.php\?[a-zA-Z]*id=\d+@http://admup.admflt.com/null.html?block@
+|http://*/*.jsp*id=$f@302:s@^http:\/\/((?!admflt|weibo).)*\.(\w)+(\:\d*)*\/((?!forum|home|avatar|attachment|thread|read|down|edit).)*.jsp\?[a-zA-Z]*id=\d+@http://admup.admflt.com/null.html?block@
+|http://*/*.aspx*id=$f@302:s@^http:\/\/((?!gamersky|acfun|qiuziti|mydrivers).)*\.(\w)+(\:\d*)*\/((?!forum|home|avatar|attachment|thread|read|down|edit|demo|Viewimg|getvideourl).)*.aspx\?[a-zA-Z]*id=\d+@http://admup.admflt.com/null.html?block@
+|http://admup.admflt.com/null.html*
+
+!------↓iqiyi爱奇艺简单强开html5播放器，IE有问题，话说还有人用IE？
+|http://static.iqiyi.com/js/player*/pcweb.wonder.js$s@r.query("__playertype__")@"h5"@
+
+!------↓youku开html5播放器+开启1080p选项(如果有1080p清晰度)
+||v.youku.com/v_show/*.html$s@</head>@<script>sessionStorage.P_l_h5=true;</script></head>@
+||alicdn.com/ku/youkuplayer/*/youku-player.min.js$s@&&("1080p"!==f.QualityNameList[u].code||i)@@
+@@||mmstat.com/yt/*$pass
+!------↓youku html5单击暂停/播放+双击全屏/恢复，播放控制及loading栏美化
+v.youku.com##%.preloading-layer.blackbg,.preloading-layer{background-color:transparent!important}.h5player-dashboard{background-color:transparent!important;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABACAQAAABxGNXLAAAAMklEQVR4AWVOhQEAMAgy+P/ldcHsFuvkYRHDUqCSXShoAq5AAhr4ixrnFt+VbQmVb+sVZc4BFKjYG7sAAAAASUVORK5CYII=)}
+||ykimg.com/material/*ad/*.js$S@^.*$@$('#player').on("click",".h5-layer-conatiner",function(){$('.control-icon.control-play-icon').click()});$('#player').on("dblclick",".h5-layer-conatiner",function(){$('.control-fullscreen-icon').is(':visible')?$('.control-fullscreen-icon').click():$('.control-halfscreen-icon').click()})@s
+
+
+!------↓腾讯视频开html5播放器
+||v.qq.com/x/cover/*.html$s@</head>@<script>_txvus=localStorage["txp-user-setting"]&&JSON.parse(localStorage["txp-user-setting"])||JSON.parse('{"isUseFlash":0}');_txvus.isUseFlash=0;localStorage["txp-user-setting"]=JSON.stringify(_txvus);</script></head>@
+
+!------↓百度盘开html5播放器
+||pan.baidu.com/play/$s@</head>@<script>localStorage.FlashSupport=false;</script></head>@
+||pan.baidu.com/box-static/base/*.js$s@setItem("FlashSupport"@setItem("h5_player"@
+
+!------↓乐视开html5播放器
+!||jstatic.letvcdn.com/sdk/player.js$s@isH5:e.isH5@isH5:1@
+
+!B站直播有时会莫名跳到https可能还在测试，此条规则遇到这样的强制跳回http先
+|https://live.bilibili.com/*$f@302:s@^https:\/\/(.*)/(\d*)@http://$1/$2@
+
+!------↓QQ浏览器错误页相关搜索，如有需要复制下面这条到user.txt去掉前面的!号
+!|http://www.sogou.com/tx?ie=utf-8&hdq=*
+
+!------↓QQ导航重定到hao123，可自行修改，如有需要复制下面这条到user.txt去掉前面的!号
+!daohang.qq.com$f@302:s@^http(s)*:\/\/daohang.qq.com\/(.)*@https://www.hao123.com@
+
+!------↓向下滚动时去播放器悬浮
+||v.youku.com/v_show/*##.player.player-fixed{visibility:hidden}csshack
+||www.tudou.com/*##%.con_player_fix{visibility:hidden}
+||v.qq.com/x/*##%.mod_player_float{visibility:hidden}
+||www.le.com/*vplay*.html*##%.player_min{visibility:hidden}
+||www.mgtv.com/b/*.html*##%.floating{visibility:hidden!important}
+||www.iqiyi.com/*.html*##%.videoWindow{visibility:hidden!important}
+||iqiyi.com/*.html*##%#flashbox[style*="relative"][style*="float"][style*="height"][style*="width"][style*="top"][style*="left"]{visibility:hidden!important}
+
+!------↓各网站VIP解析及接口去广告
+
+72du.com##.tipb
+q.z.vip.totv.72du.com##.secs strong
+www.65yw.com##.tui__header
+|http://q.z.vip.totv.72du.com/$S@showTime\(\d{1,2}\);@showTime(0);@
+|http://s.0594529.com
+|http://yyygwz.com/$image
+||api.svip.baiyug.cn/*?url=*$S@$@<style>#a1{margin-top:-23px}</style>@s
+||q.z.vip.totv.72du.com$S@,[1-9][0]{3}@,1000@
+||rooog.cn/tongji/tj.php
+||www.65yw.com$S@<frame .*?\.html[^>]>@@
+||www.65yw.com$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
+||www.gyingyuan.com/jiexi/$image
+
+|http://v.youku.com/v_show/*$s@</body>@<script src="http://admup.admflt.com/d/vip-adm.js"></script></body>@
+|http://v.youku.com/v_show/*$s@</body>@<script>insVIP('fns','player');</script></body>@
+||v.youku.com/v_show/*###player:not([style])>iframe{height:calc(100% - 50px)}csshack
+|http://www.iqiyi.com/v_*$s@</body>@<script src="http://admup.admflt.com/d/vip-adm-iqiyi.js"></script></body>@
+|http://www.iqiyi.com/v_*$s@</body>@<script>insVIP('mod-play-tit','flashbox');</script></body>@
+|http://www.iqiyi.com/v_*##div[style*="absolute"][style*="visibility"]
+|http://vip.iqiyi.com/*/*.html*$s@</body>@<script src="http://admup.admflt.com/d/vip-adm-iqiyi.js"></script></body>@
+|http://vip.iqiyi.com/*/*.html*$s@</body>@<script>insVIP('mod-play-tit','flashbox');</script></body>@
+|http://vip.iqiyi.com/*/*.html*##div[style*="absolute"][style*="visibility"]
+|http://www.le.com/*vplay*.html$s@</body>@<script src="http://admup.admflt.com/d/vip-adm.js"></script></body>@
+|http://www.le.com/*vplay*.html$s@</body>@<script>insVIP('j-video-name video-name','fla_box');</script></body>@
+|https://film.sohu.com/album/*.html$s@</body>@<script src="https://admup3.admflt.com/d/vip-adm.js"></script></body>@
+|https://film.sohu.com/album/*.html$s@</body>@<script>insVIP('player-content-info','playerWrap');</script></body>@
+|http://film.sohu.com/album/*.html##.player-content-info>select{margin-top:20px;font-size: 15px}csshack
+|https://v.qq.com/x/*.html*$s@</body>@<script src="https://admup3.admflt.com/d/vip-adm-qq.js"></script></body>@
+|https://v.qq.com/x/*.html*$s@</body>@<script>insVIPssl('action_wrap cf','tenvideo_player');</script></body>@
+|https://v.qq.com/x/*.html*##[class="action_wrap cf"]>select{margin-top:18px}[class="action_item action_count"] .icon_text
+|http://www.mgtv.com/*.html$s@</body>@<script src="http://admup.admflt.com/d/vip-adm.js"></script></body>@
+|http://www.mgtv.com/*.html$s@</body>@<script>insVIP('v-panel-count','mgtv-player-wrap');</script></body>@
